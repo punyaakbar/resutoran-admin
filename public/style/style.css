@@ -1,0 +1,149 @@
+:root {
+  --main-color-admin: #eeb02a !important;
+  --secondary-color-admin: #d89608;
+  --default-color-text: #4f4f4f;
+}
+
+.bg-main-color-admin {
+  background-color: var(--main-color-admin) !important;
+}
+
+.bg-secondary-color-admin {
+  background-color: var(--secondary-color-admin) !important;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+header.admin-dashboard-header {
+  background-color: var(--secondary-color-admin);
+  position: fixed !important;
+  top: 0;
+  width: inherit;
+  z-index: +2;
+}
+
+.account-pict-dropdown {
+  position: absolute;
+  margin-left: -60px;
+}
+
+nav.admin-dashboard-sidebar {
+  background-color: var(--main-color-admin);
+  width: fit-content;
+  position: fixed !important;
+  top: 0px;
+  height: 100vh;
+  padding-top: 70px !important;
+  z-index: +1;
+}
+
+.sidebar-trigger {
+  font-size: 25px;
+}
+
+ul.list-no-decoration {
+  list-style: none;
+  padding: 0;
+}
+
+ul.list-menu > li > a {
+  color: var(--default-color-text);
+  font-size: 16px;
+  display: block;
+  padding: 5px 40px;
+}
+
+ul.list-menu > li.active {
+  background-color: var(--secondary-color-admin);
+}
+
+ul.list-menu > li > a > i {
+  width: 20px;
+}
+
+main.dashboard-content {
+  position: relative;
+  padding-top: 60px !important;
+  min-height: 100vh;
+  margin-top: 20px;
+}
+
+/* menu animation trigger */
+.menu-transition {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main.dashboard-content {
+  left: 0px !important;
+}
+
+nav.admin-dashboard-sidebar {
+  left: -187px;
+}
+
+nav.sidebar-open {
+  left: 0px !important;
+}
+
+/* card style  */
+
+.card-count-item-detail {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.card-footer-detail-button {
+  text-decoration: none;
+}
+
+/* footer  */
+footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+.auth-page-container {
+  min-height: 100vh;
+}
+
+/* custom ratio img restoran  */
+@media screen and (max-aspect-ratio: 50/51) {
+  img.img-restoran {
+    width: 80vw !important;
+    height: 52.5vw !important;
+  }
+}
+
+@media screen and (min-aspect-ratio: 51/50) {
+  img.img-restoran {
+    width: 80vw !important;
+    height: 52.5vh !important;
+  }
+}
+
+/* transparent scrollbar  */
+/* width */
+.tr-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+/* Track */
+.tr-scrollbar::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.5);
+}
+
+/* Handle */
+.tr-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(84, 84, 84, 0.1);
+}
+
+/* Handle on hover */
+.tr-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(84, 84, 84, 0.2);
+}
